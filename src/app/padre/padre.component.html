@@ -1,0 +1,9 @@
+<div class="container-fluid" align="center">
+    <div class="card text-center mt-5" style="width: 25rem" *ngIf="entrada">
+      <h3 class="card-title">{{ entrada.imageName }}</h3>
+      <img [src]="entrada.imageUrl" class="card-img-top" [alt]="entrada.imageName" />
+      <div class="card-body">
+          <p class="card-text">{{ entrada.imageName | decoradorTituloEntrada }}</p>
+        </div>
+    </div>
+  </div>
